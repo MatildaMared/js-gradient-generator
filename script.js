@@ -24,7 +24,7 @@ const generateRandomGradient = function () {
     return `linear-gradient(${generateRandomDirection()}, ${generateRandomRGB()}, ${generateRandomRGB()})`;
 }
 
-
+// Make background update and gradient CSS code appear when button is clicked
 button.addEventListener("click", function () {
     let gradient = generateRandomGradient();
     document.querySelector("body").style.background = gradient;
